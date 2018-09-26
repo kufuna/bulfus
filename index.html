@@ -39,6 +39,12 @@
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script type="text/javascript">
+    $(window).on('load',function(){
+        $('.loader').hide();
+    })
+    
+    
+    
     $('button').on('click' , function(){
         $(this).fadeOut();  
         $('b.top').addClass('active')
